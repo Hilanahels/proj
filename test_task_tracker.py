@@ -78,9 +78,9 @@ def test_register_short_password(mock_mb):
 
 def test_login_success(mock_mb):
     """Успешный вход"""
-    app.users["admin"] = "pass123"
+    app.users["admin"] = "123456"
     app.entry_login.get.return_value = "admin"
-    app.entry_password.get.return_value = "pass123"
+    app.entry_password.get.return_value = "123456"
 
     app.login()
 
