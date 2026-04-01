@@ -60,8 +60,8 @@ def test_register_success(mock_mb):
 
     app.register()
 
-    assert "user2" in app.users
-    assert app.users["user2"] == "123456"
+    assert "user1" in app.users
+    assert app.users["user1"] == "123456"
     mock_mb.showinfo.assert_called()
 
 
